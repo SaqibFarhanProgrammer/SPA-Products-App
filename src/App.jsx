@@ -16,7 +16,6 @@ const App = () => {
   useEffect(() => {
     getdata();
   }, []);
-  console.log(products);
 
   return (
     <div className="h-screen w-full bg-white">
@@ -27,22 +26,14 @@ const App = () => {
           <h1 className="text-5xl text-start p-10 text-white">Products</h1>
         </div>
         <div className="cards p-10 flex flex-wrap gap-15">
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          {products.map((prodcutss)=>{
+
+          <Card key={prodcutss} title={prodcutss.title} dec={prodcutss.description} src={prodcutss.image} price={prodcutss.price} />  
+          })}
         </div>
       </div>
     </div>
   );
-};
+  };
 
 export default App;
