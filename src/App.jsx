@@ -288,7 +288,6 @@ const App = () => {
   useEffect(() => {
     setproducts(obj);
   }, []);
-
   return (
     <div className="h-screen w-full bg-white">
       <Navbar />
