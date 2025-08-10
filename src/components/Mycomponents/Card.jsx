@@ -1,9 +1,10 @@
 import React from "react";
+import { Button } from "../ui/button";
 
 const Card = () => {
   return (
     <div>
-      <div className="card bg-base-100 w-96 shadow-sm">
+      <div className="card bg-zinc-100 w-96 shadow-sm">
         <figure>
           <img
             src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
@@ -19,9 +20,13 @@ const Card = () => {
             A card component has a figure, a body part, and inside body there
             are title and actions parts
           </p>
-          <div className="card-actions justify-end">
-            <div className="badge badge-outline">Fashion</div>
-            <div className="badge badge-outline">Products</div>
+          <div className="card-actions justify-end mt-10">
+            <Button>
+              Add To Cart
+            </Button>
+            <Button>
+Buy Now!            </Button>
+           
           </div>
         </div>
       </div>

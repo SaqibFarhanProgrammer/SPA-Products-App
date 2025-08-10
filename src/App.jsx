@@ -12,7 +12,18 @@ const App = () => {
       <div className="text">
         <h1 className="text-5xl text-start p-10 text-white">Products</h1>
       </div>
-      <div className="cards">
+      <div className="cards p-10 flex flex-wrap gap-15">
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
+        <Card/>
         <Card/>
       </div>
     </div>
