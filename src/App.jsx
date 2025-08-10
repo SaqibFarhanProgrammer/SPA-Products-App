@@ -3,13 +3,11 @@ import { Button } from "./components/ui/button";
 import Card from "./components/Mycomponents/Card";
 
 const App = () => {
-  return (
-    <div>
-      <Button className="m-20"> hello</Button>
+  return <div className="h-[100%] w-[100%]  bg-white">
 
-      <Card />
-    </div>
-  );
+
+    
+  </div>;
 };
 
 export default App;
