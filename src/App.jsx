@@ -3,6 +3,8 @@ import { Button } from "./components/ui/button";
 import Navbar from "./components/Mycomponents/Navbar";
 import Hero from "./components/Mycomponents/Hero";
 import Card from "./components/Mycomponents/Card";
+import EcommerceFooter from "./components/Mycomponents/Footer";
+import Footer from "./components/Mycomponents/Footer";
 
 const App = () => {
   const [products, setproducts] = useState([]);
@@ -309,6 +311,7 @@ const App = () => {
           })}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
