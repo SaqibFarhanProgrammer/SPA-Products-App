@@ -5,21 +5,18 @@ import Hero from "./components/Mycomponents/Hero";
 import Card from "./components/Mycomponents/Card";
 
 const App = () => {
-
-  const [products, setproducts] = useState([])
+  const [products, setproducts] = useState([]);
 
   const getdata = async () => {
-    const res = await fetch('https://jsonplaceholder.typicode.com/todos/1')
-    const data = await res.json()
-    setproducts(data)
+    const res = await fetch("https://fakestoreapi.com/products");
+    const data = await res.json();
+    setproducts(data);
   };
 
   useEffect(() => {
-getdata()
-console.log(products);
-
-  }, [])
-  
+    getdata();
+  }, []);
+  console.log(products);
 
   return (
     <div className="h-screen w-full bg-white">
